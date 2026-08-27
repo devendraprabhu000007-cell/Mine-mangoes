@@ -1,0 +1,23 @@
+MINE MANGOES V1 — PHONE-ONLY GITHUB BUILD
+
+1. Extract this ZIP.
+2. In GitHub, open your empty Mine-mangoes repository.
+3. Upload the files while preserving the visible paths:
+   settings.gradle
+   build.gradle
+   src/main/AndroidManifest.xml
+   src/main/res/values/styles.xml
+   src/main/java/com/minemangoes/app/MainActivity.java
+   src/main/assets/index.html
+
+4. If GitHub mobile cannot upload folders, use GitHub's Add file > Create new file and create each path exactly as shown above, then paste the corresponding file content. This is slower but works entirely from a phone.
+
+5. Create the GitHub Actions workflow:
+   Actions > New workflow > set up a workflow yourself.
+   Name it: android.yml
+   Paste the workflow from WORKFLOW_TO_PASTE.txt.
+   Commit the workflow.
+
+6. Open Actions > Build Mine Mangoes APK > Run workflow.
+7. Wait for the green check.
+8. Open the run and download the artifact named Mine-Mangoes-V1-APK.
